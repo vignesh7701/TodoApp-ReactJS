@@ -1,0 +1,9 @@
+.todo-item {
+ display: flex;
+ justify-content: cneter;
+ gap: 2px;
+ align-items: center;
+}
+.todo-item p {
+ color: #888;
+}
