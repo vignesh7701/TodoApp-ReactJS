@@ -1,9 +1,23 @@
-.todo-item {
- display: flex;
- justify-content: cneter;
- gap: 2px;
- align-items: center;
+* {
+    margin: 0;
+    padding: 0;
 }
-.todo-item p {
- color: #888;
+
+.container{
+    background: linear-gradient(to right bottom, #4d4d4d, #000000);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-wrap{
+    background-color: #121212;
+    min-width: 450px;
+    min-height: 650px;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 }
