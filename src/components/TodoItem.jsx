@@ -1,11 +1,13 @@
-import React, { useEffect } from "react";
+/* eslint-disable react/prop-types */
+
+import { useEffect } from "react";
 import { v4 as uuidv4 } from "uuid";
 
 function TodoItem({ input, todos, setTodos, setInput, editTodo, setEditTodo }) {
   const updateTodo = (title, id, completed) => {
-    const newTodo = todos.map((todo) => 
+    const newTodo = todos.map((todo) =>
       todo.id === id ? { title, id, completed } : todo
-    )
+    );
 
     setTodos(newTodo);
     setEditTodo("");
@@ -29,9 +31,9 @@ function TodoItem({ input, todos, setTodos, setInput, editTodo, setEditTodo }) {
     }
   }, [setInput, editTodo]);
 
-  const inputTextHandler = (e) => {
-    setInput(e.target.value);
-  };
+  // const inputTextHandler = (e) => {
+  //   setInput(e.target.value);
+  // };
 
   return (
     <form onSubmit={whileSubmit}>
@@ -41,7 +43,7 @@ function TodoItem({ input, todos, setTodos, setInput, editTodo, setEditTodo }) {
         className="task-input"
         value={input}
         required
-        onChange={inputTextHandler}
+        onChange={(e) => setInput(e.target.value) }
       />
       <button className="button-add" type="submit">
         {editTodo ? "OK" : "Add"}

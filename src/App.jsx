@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import {useEffect, useState} from "react";
 import TodoList from "./components/TodoList";
 import TodoItem from "./components/TodoItem";
 import Header from "./components/Header";
