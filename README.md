@@ -5,4 +5,4 @@ This template provides a minimal setup to get React working in Vite with HMR and
 
 ### Deployed Site Done Below 👇🏼
 
-[TodoApp 🧾](https://vignesh7701.github.io/TodoApp/)
+[TodoApp 🧾](https://vignesh7701.github.io/TodoApp-ReactJS/)
